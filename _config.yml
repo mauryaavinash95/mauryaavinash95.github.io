@@ -1,0 +1,54 @@
+#
+# This file contains configuration flags to customize your site
+#
+
+# Name of your site (displayed in the header)
+title: Avinash Maurya
+
+# Short bio or description (displayed in the header)
+description: Web Developer
+
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: https://avatars2.githubusercontent.com/u/9115659?s=400&u=c8cebf240e82f55350ee4269ca1d9b03c36953a9&v=4
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email:
+  facebook:
+  flickr:
+  github: mauryaavinash95
+  instagram:
+  linkedin: mauryaavinash/
+  pinterest:
+  rss: # just type anything here for a working RSS icon
+  twitter: 
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: # anything in your profile username that comes after plus.google.com/
+
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+disqus:
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics:
+url: https://www.mauryaavinsh95.github.io
+baseurl: "" #For hosting only a project
+
+#
+# !! You don't need to change any of the configuration flags below !!
+#
+permalink: /:title/
+
+
+email: avinashmaury@outlook.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+# theme: minima
+plugins:
+  - jekyll-feed
+theme: jekyll-theme-cayman
