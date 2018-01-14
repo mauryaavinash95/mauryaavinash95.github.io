@@ -17,7 +17,7 @@ An app to shorten the URL, built with MeteorJS. It ended up having an actually b
 ![Shoterr in action]({{ site.baseurl }}/images/shorterr/shorterr.gif)
 
 
-4. ### [CUDA](gpu-computing-using-cuda) 
+4. ### [GPU-Computing using CUDA](gpu-computing-using-cuda) 
 An introduction to GPU computing using NVidia's CUDA Framework.
 
 

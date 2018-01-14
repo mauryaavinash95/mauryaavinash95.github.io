@@ -1,5 +1,7 @@
 ---
 layout: page
 comments: true
-title: CUDA
+title: Shorterr
 ---
+
+> Coming soon
