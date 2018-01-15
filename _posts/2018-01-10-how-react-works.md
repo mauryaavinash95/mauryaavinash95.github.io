@@ -4,6 +4,7 @@ title:  How React works
 date:   2018-01-10 21:42:24 +0530
 categories: React
 comments: true
+tags: React, Frontend
 ---
 After the launch of [React Fibre](https://reactjs.org/blog/2017/09/26/react-v16.0.html), there has been a lot of excitment about the *"Fibre"* part of it. I also wanted to have a peek in, and after some searches, I was able to grasp something out of it. So, here is a lil snippet of my understanding of it.
 
@@ -17,7 +18,7 @@ The purpose of making the reconciler as a seperate unit was reusablility of the 
 
 ### What the Reconciler does?
 #### Understanding this, the Stack Reconciler way:
-The reconciler is responsible for comparing the previous state with the current state, it does so by maintaining trees. The trees of current state version and the next(working) state of the application are compared. Each element(Eg.`<div>, <span>, <li>` for web) is considered as a node of the tree.    
+The reconciler is responsible for comparing the previous state with the current state, it does so by maintaining trees. The trees of current state version and the next(working) state of the application are compared. Each element(Eg.`<CustomComponent>, <div>, <span>, <li>` for web) is considered as a node of the tree.    
 All these nodes are connected to the `HostRoot` which drives them all, connected to this `HostRoot` is our `root` element, the `<div>` element we generally specify in our index.html file with id="root" or id="app".  
 So now that the main parent is `HostRoot`, `root` element becomes its child.    
 The elements are connected in a hierarchical order i.e. if `element_2` is referenced inside `element_1`, `element_1` is parent of `element_2` and `element_2` is child of `element_1`.  
@@ -26,7 +27,7 @@ Similar goes for the case of siblings i.e. if `element_3`, `element_4` and `elem
 Diagramatically,   
 ![Diagramatic Relation]({{site.baseurl}}/images/how-react-works/relationship.png)   
 
-Now consider there's a change in `element_2` and `element_3`. What the stack reconciler does is that it compares the current tree, with the new changes and as soon as it notices a difference between the currently compared element, say `element_2`, it goes on to update the DOM of that corrosponding element. Only once that is done, it goes on to compute the changes in next element `element_3` and then repaints it in the DOM.    
+Now consider there's a change in `element_2` and `element_3`. What the stack reconciler does is that it compares the current tree, with the new changes and as soon as it notices a difference between the currently compared element, say `element_2`, it goes on to update the DOM of that corresponding element. Only once that is done, it goes on to compute the changes in next element `element_3` and then repaints it in the DOM.    
 This is due to the fact that JS is single threaded, there's only one worker process/thread to take care of computation and painting, and no matter how fast these computations and DOM manipulations happen, this inconsistency will always be there, the state of the application would be prone to inconsistency by this mechanism.  
 
 Diagramatically,
@@ -38,8 +39,8 @@ Now that we've got some of the mechanics and glitches of the stack reconciler, l
 React Fibre basically operates on two phases, the reconciliation/render phase and the commit phase. The former one is interruptable, but the later one isn't. In the reconciliation/render part, it does its computation, checks for all the elements which need updates and tries to complete the working-tree. In the commit part, it transfers the title of current tree to the working-tree(updated tree). Only after the commit phase is done, it alters the DOM, so there is no UI inconsitency observed. Here it would check all the elements which need update, and only when those are done, it proceeds to commit phase.  
 
 ##### How does it do that?
-So what fibre does is it schedules the tasks based on priority, meaning the call-stack would now be alterable. The tasks with higher priorities are popped ahead on the call-stack as compared to the lower priority updates.   
-> For example,  the change of button text would be a high priority update as compared to showing a response recieved from the server. The user would want as instantaneous update of his actions & interactions as possible.  
+So what fibre does is it schedules the tasks based on priority, meaning the call-stack would now be alterable. The tasks with higher priorities are popped ahead on the call-stack as compared to the lower priority updates.       
+*For example,  the change of button text would be a high priority update as compared to showing a response recieved from the server. The user would want as instantaneous update of his actions & interactions as possible.*  
 
 Fibre takes advantage of the functionality of `requestIdleCallback` in modern browsers, or polyfills it in case its absent in that browser.   
 So, there's our main thread, doing all the job of Javascript, CSS, DOM etc., but what fibre does using `requestIdleCallback` is it tells that main thread, *"Hey!, notify me whenever you're free, I got work for you."*. And as a sincere worker, the main thread does that, it goes to the *Fibre*, tells it the time it has to spare, say something like *"Boss, I got 16ms spare time now"*. So the reconciler uses this time to do the computations, creating the `working-tree` and `effect-list`.   

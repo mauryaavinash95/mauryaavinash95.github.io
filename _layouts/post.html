@@ -4,7 +4,11 @@ layout: default
 
 <article class="post">
   <h1>{{ page.title }}</h1>
-
+  {% if page.tags%}
+    <div style="display:flex">
+      <u><p>Tags: <code>{{page.tags}}</code></p></u>
+    </div>
+  {% endif%}
   <div class="entry">
     {{ content }}
   </div>
