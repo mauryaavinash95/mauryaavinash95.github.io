@@ -32,7 +32,7 @@ footer-links:
 # You can find your shortname on the Settings page of your Disqus account
 disqus: mauryaavinash95
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-112779034-1
 url: https://www.mauryaavinsh95.github.io
 baseurl: "" #For hosting only a project
 
