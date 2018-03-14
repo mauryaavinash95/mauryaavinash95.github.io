@@ -3,6 +3,10 @@ layout: page
 title: Projects
 ---
 
+1. ### [Word App](word-app)
+A simple dictionary with google like interface. [Check it here](https://app-word-app.herokuapp.com) 
+![Sky-shooter in action]({{ site.baseurl }}/images/word-app/word-app.gif)  
+
 1. ### [Sky-Shooter](sky-shooter)
 The good ol' space shooter game, built in ReactJS. [Play it now](https://sky-shooter.herokuapp.com) 
 ![Sky-shooter in action]({{ site.baseurl }}/images/sky-shooter/sky-shooter.gif)     
