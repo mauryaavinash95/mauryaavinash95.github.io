@@ -61,7 +61,7 @@ Coming to the database part, I used the free datastore from [Mlabs](https://mlab
 * PWA is a bit demanding in terms of security though, but it rightly has its reason for it. This required me forcing HTTPS for frontend. On heroku that isn't very complicated right? *You just add a `"https_only": true` to your static.json*.  
 * Now since frontend was working on HTTPS, it wasn't able to make calls to HTTP backend, again security reasons. So this time, I had to obtain a SSL certificate for PWA to work. That's when I first learned about [Let's Encrypt](https://letsencrypt.org/). Through some trails-and-errors I finally came to know that it's not going to work on `public ip address`, `elastic ip address` or `instance url` of my EC2 or some free domain with redirects or iFrame embeds, so I had to buy a domain, change its DNS records and then finally was able to achieve a valid SSL.     
 * Again, to save some later time and effort, I routed the backend traffic through [Nginx](https://www.nginx.com/), forced HTTPS on that as well and added some location proxies for various projects. And I came to a realisation that Nginx is simply :heart_eyes:
-* Backend was a bit tedious as compared to frontend (obviously :laughing:), but it was fun doing that as well.
+* Backend was a bit tedious as compared to frontend (obviously :smile:), but it was fun doing that as well.
 > More on this coming up in a blog-post.
 
 ### Conclusion
