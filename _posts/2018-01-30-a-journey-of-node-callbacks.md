@@ -6,7 +6,7 @@ categories: NodeJS
 comments: true
 tags: Nodejs, V8, Callbacks
 ---
-After scratching my head for a while on one of my colleague, [Sachin Talekar's](https://www.linkedin.com/in/sachin-talekar-9628a267/) question, I decided to start understanding the way nodejs works, how it does what it does and how has it become different than other runtimes out there.
+After pondering for a while on one of my colleague, [Sachin Talekar's](https://www.linkedin.com/in/sachin-talekar-9628a267/) question, I decided to start understanding the way nodejs works, how it does what it does and how has it become different than other runtimes out there.
 The question.      
 > Consider there are 3 requests hitting the node server, namely R1, R2 and R3 consequently, so these requests are stacked up as R1,R2,R3 with R1 being at the bottom of the stack and R3 being at the top. And these requests are to three different services (I/O calls). What would happen if R2 gets completed first, would it wait for the R3 to pop or node would deal with it some other way?
 
