@@ -44,7 +44,7 @@ The Ministry and Indian Govt. lauded the meticulous intricate details, technolog
 It was truly a phenomenal success for all of us afterall, with 2 weeks of dedicated preparation, 40+ hours of non-stop coding and ebullient team-efforts we got home the trophy.
 
 ### Our special moments together
-![Team Pic]({{site.baseurl}}/images/sih-2018/sih-2018.png)
+![Team Pic]({{site.baseurl}}/images/sih-2018/sih-2018.jpg)
 
 ### Media:
 Twitter: [BigOh, winner team, shared their winning story & about their journey of ideas to implementations.](https://twitter.com/GeekonixEdge/status/980626539787075584?s=17)       
