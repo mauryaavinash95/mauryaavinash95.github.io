@@ -70,6 +70,8 @@ To get you started, I've uploaded a basic barebone folder structure and DB schem
 2. https://app-word-app.herokuapp.com
 3. 
 
+Insert Image Query: $sql_insert = "INSERT INTO posts (userid, timestamp, image, text) VALUES ('".$userid."', '".$timestamp."', '".$new_filename."', '".$post_text."');";
+
 
 .... *Rest for the workshop now....* 
 *May the code be with you!!*
