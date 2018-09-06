@@ -63,7 +63,12 @@ Breaking it down:
 ![PHP-Workshop-Demo-PNG]({{site.baseurl}}/images/php-workshop/php-workshop.png)
 
 ### Boilerplate code
-To get you started, I've uploaded a basic barebone folder structure and DB schema on Github, please proceed to [https://github.com/mauryaavinash95/fhoto](https://github.com/mauryaavinash95/fhoto) and clone it. Paste in on your respective working directories.          
+To get you started, I've uploaded a basic barebone folder structure and DB schema on Github, please proceed to [https://github.com/mauryaavinash95/fhoto](https://github.com/mauryaavinash95/fhoto) and clone it. Paste in on your respective working directories.     
+
+### Links:
+1. https://my-node-webserver.herokuapp.com/
+2. https://app-word-app.herokuapp.com
+3. 
 
 
 .... *Rest for the workshop now....* 
