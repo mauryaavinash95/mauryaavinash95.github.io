@@ -17,7 +17,7 @@ So these reasons plus the fact that web-development is a part of Mumbai Universi
 Version control system   
 1. Install: `sudo apt-get install git -y`       
 2. Check: `git --version`       
-3. Clone a remote repository: `git clone git@github.com:mauryaavinash95/sky-shooter.git`        
+3. Clone a remote repository: `git clone https://github.com/mauryaavinash95/fhoto.git`        
 4. Add files to staging: `git add .`        
 5. Commit files: `git commit -m "Initial commit"`       
 6. Push to remote repository: `git push origin master`      
