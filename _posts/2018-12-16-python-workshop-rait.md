@@ -14,10 +14,9 @@ PYTHON has grown into the most dominant, robust and elegant high-level programmi
 
 Owing to your zeal to learn about various advancements of this field, I feel ebullient to welcome you all to this two-day hands-on python workshop.
 
-## Speakers			
-1. [Snehal Mumbaikar- Asst. Professor, RAIT, University of Mumbai.](https://www.linkedin.com/in/snehal-mumbaikar-39028767/)
-2. [Adit Shinde (2017 Graduate) Currently working at JPMC](https://www.linkedin.com/in/aditshinde/)
-3. [Avinash Maurya (2017 Graduate) Currently working at Peoplegrove Inc, previously Reliance Jio. ](https://www.linkedin.com/in/mauryaavinash)
+## External Speakers			
+1. [Adit Shinde (2017 Graduate) Currently working at JPMC](https://www.linkedin.com/in/aditshinde/)
+2. [Avinash Maurya (2017 Graduate) Currently working at Peoplegrove Inc, previously Reliance Jio. ](https://www.linkedin.com/in/mauryaavinash)
 
 ## Topics			
 1. What is Python?
