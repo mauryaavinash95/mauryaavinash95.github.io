@@ -67,16 +67,18 @@ Breaking it down:
 ### Boilerplate code
 To get you started, I've uploaded a basic barebone folder structure and DB schema on Github, please proceed to [https://github.com/mauryaavinash95/fhoto](https://github.com/mauryaavinash95/fhoto) and clone it. Paste in on your respective working directories.     
 
-### Links:
-1. https://my-node-webserver.herokuapp.com/
-2. https://app-word-app.herokuapp.com
-3. 
-
-Insert Image Query: $sql_insert = "INSERT INTO `workshop`.`posts` (`userid`, `timestamp`, `image`, `text`) VALUES ('".$userid."', '".$timestamp."', '".$new_filename."', '".$post_text."');";
-
 
 .... *Rest for the workshop now....* 
 *May the code be with you!!*
+
+
+## Thanks for inviting me!
+![Happy-All]({{site.baseurl}}/images/php-workshop/all-pic.jpg)				
+
+![Discussions]({{site.baseurl}}/images/php-workshop/discussion.jpg)					
+
+![Appreciation]({{site.baseurl}}/images/php-workshop/token-of-appreciation.jpg)
+
 
 
 
