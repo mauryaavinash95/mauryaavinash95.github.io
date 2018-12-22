@@ -143,4 +143,7 @@ Write an article explaining how you built it, which libraries did you use and wh
 Send a working video of any and all subtask(s) to avinash [at] outlook [dot] com - I'll gladly feature it here on this page and invite you for my next hackathon tour. With a few tweaks, it might be your first step towards open source contribution.					
 
 
+## College Feedback form
+Please click [here](https://docs.google.com/forms/d/e/1FAIpQLSerBHaYJTzbR7IYo7MWAAb0EUhKAkSnSdRagzOdgqkaGToE0w/viewform?vc=0&c=0&w=1) and fill out the feedback.
+
 # Hope to see you guys soon! Dasvidaniya!! 
