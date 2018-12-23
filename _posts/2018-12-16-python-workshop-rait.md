@@ -146,4 +146,14 @@ Send a working video of any and all subtask(s) to avinash [at] outlook [dot] com
 ## College Feedback form
 Please click [here](https://docs.google.com/forms/d/e/1FAIpQLSerBHaYJTzbR7IYo7MWAAb0EUhKAkSnSdRagzOdgqkaGToE0w/viewform?vc=0&c=0&w=1) and fill out the feedback.
 
+## Some Memories...
+![Inauguration]({{site.baseurl}}/images/python-workshop/inauguration.jpg)
+
+![Happy All]({{site.baseurl}}/images/python-workshop/all-pic.jpg)
+
+![Token of Appreciation]({{site.baseurl}}/images/python-workshop/token-of-appreciation.jpg)
+
+
+
+
 # Hope to see you guys soon! Dasvidaniya!! 
